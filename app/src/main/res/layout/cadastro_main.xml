@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cda0d835266a6e84e5a05e4b88c25de1"
+
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/containerlogin"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/container_edit_text_login"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <TextView
+        android:id="@+id/textcadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="@id/containerlogin"
+        app:layout_constraintStart_toStartOf="@id/containerlogin"
+        app:layout_constraintEnd_toEndOf="@id/containerlogin"
+
+        />
+    <TextView
+        android:id="@+id/textdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="insira seus dados"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/textcadastro"
+        app:layout_constraintStart_toStartOf="@id/containerlogin"
+        app:layout_constraintEnd_toEndOf="@id/containerlogin"
+
+        />
+    <EditText
+        android:id="@+id/EditTextUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome de Usuário:"
+        android:background="@drawable/container_edit_text_login"
+        android:padding="15dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintTop_toBottomOf="@id/textdesc"
+        app:layout_constraintStart_toStartOf="@+id/containerlogin"
+        app:layout_constraintEnd_toEndOf="@+id/containerlogin"
+
+
+        />
+    <EditText
+        android:id="@+id/EditTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email:"
+        android:background="@drawable/container_edit_text_login"
+        android:padding="15dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintTop_toBottomOf="@id/EditTextUser"
+        app:layout_constraintStart_toStartOf="@+id/containerlogin"
+        app:layout_constraintEnd_toEndOf="@+id/containerlogin"
+        />
+    <EditText
+        android:id="@+id/EditTextSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha:"
+        android:background="@drawable/container_edit_text_login"
+        android:padding="15dp"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintTop_toBottomOf="@id/EditTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/containerlogin"
+        app:layout_constraintEnd_toEndOf="@+id/containerlogin"
+        />
+    <EditText
+        android:id="@+id/EditTextTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefone:"
+        android:background="@drawable/container_edit_text_login"
+        android:padding="15dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintTop_toBottomOf="@id/EditTextSenha"
+        app:layout_constraintStart_toStartOf="@+id/containerlogin"
+        app:layout_constraintEnd_toEndOf="@+id/containerlogin"
+        />
+
+
+    <Button
+        android:id="@+id/Btlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar!"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:backgroundTint="@color/blue"
+        app:cornerRadius="30dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintTop_toBottomOf="@id/EditTextTel"
+        app:layout_constraintStart_toStartOf="@id/containerlogin"
+        app:layout_constraintEnd_toEndOf="@id/containerlogin"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
