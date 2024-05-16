@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Projeto Menandro</string>
+    <string name="app_name">KingTEA</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
     <string name="title_activity_inicial">inicial</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
