@@ -13,6 +13,16 @@
         android:theme="@style/Theme.ProjetoMenandro"
         tools:targetApi="31">
         <activity
+            android:name=".inicio"
+            android:exported="false"
+            android:label="@string/title_activity_inicio"
+            android:theme="@style/Theme.ProjetoMenandro" />
+        <activity
+            android:name=".inicial"
+            android:exported="false"
+            android:label="@string/title_activity_inicial"
+            android:theme="@style/Theme.ProjetoMenandro" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

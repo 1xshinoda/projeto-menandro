@@ -9,7 +9,7 @@
 
     tools:context=".MainActivity">
 
- <View
+ <androidx.constraintlayout.widget.ConstraintLayout
      android:id="@+id/containerlogin"
      android:layout_width="match_parent"
      android:layout_height="400dp"
@@ -38,7 +38,7 @@
         android:id="@+id/textdesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="insira suas informações"
+        android:text="Insira suas informações"
         android:textSize="14sp"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -57,7 +57,7 @@
         android:padding="15dp"
         android:inputType="text"
         android:maxLines="1"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginHorizontal="40dp"
         app:layout_constraintTop_toBottomOf="@id/textdesc"
         app:layout_constraintStart_toStartOf="@+id/containerlogin"
@@ -74,7 +74,7 @@
         android:padding="15dp"
         android:inputType="numberPassword"
         android:maxLines="1"
-        android:layout_marginVertical="10dp"
+        android:layout_marginVertical="20dp"
         android:layout_marginHorizontal="40dp"
         app:layout_constraintTop_toBottomOf="@id/EditTextUser"
         app:layout_constraintStart_toStartOf="@+id/containerlogin"
@@ -84,7 +84,8 @@
         android:id="@+id/editEsqueceuSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Esqueceu sua senha?"
+        android:text="@string/EsqSenha"
+        android:onClick=""
         android:textSize="14sp"
         android:textColor="@color/blue"
         android:textStyle="bold"
@@ -113,6 +114,7 @@
         app:layout_constraintTop_toBottomOf="@id/editEsqueceuSenha"
         app:layout_constraintStart_toStartOf="@id/containerlogin"
         app:layout_constraintEnd_toEndOf="@id/containerlogin"
-/>
+        app:layout_constraintBottom_toBottomOf="@id/containerlogin"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
