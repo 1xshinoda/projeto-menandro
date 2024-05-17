@@ -1,4 +1,4 @@
-package com.example.projetomenandro;
+package com.example.projetomenandro.Activity;
 
 import android.os.Bundle;
 
@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.projetomenandro.R;
+import com.google.firebase.Firebase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+
         });
     }
+
 }
