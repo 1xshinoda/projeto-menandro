@@ -7,19 +7,20 @@
     android:layout_height="match_parent"
     android:background="@drawable/cda0d835266a6e84e5a05e4b88c25de1"
 
-    tools:context=".Activity.MainActivity">
+    tools:context=".Activity.cadastro_activity">
 
     <View
         android:id="@+id/containerlogin"
         android:layout_width="match_parent"
         android:layout_height="450dp"
-        android:background="@drawable/container_edit_text_login"
         android:layout_marginHorizontal="20dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/container_edit_text_login"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
     <TextView
         android:id="@+id/textcadastro"
         android:layout_width="wrap_content"
@@ -112,22 +113,14 @@
         />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
         android:id="@+id/BotaoLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
-        android:layout_marginVertical="10dp"
-        android:backgroundTint="@color/blue"
         android:onClick="validarcampos"
-        android:padding="15dp"
         android:text="Cadastrar!"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:cornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="@id/containerlogin"
         app:layout_constraintStart_toStartOf="@id/containerlogin"
-        app:layout_constraintTop_toBottomOf="@id/EditTextTel" />
+        app:layout_constraintTop_toBottomOf="@id/EditTextTel"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
