@@ -4,19 +4,19 @@
     <group android:id="@+id/group1">
 
         <item
-            android:title="Menu"
+            android:title="perfil"
             android:id="@+id/navMenu"
             android:icon="@drawable/menu"
             />
 
         <item
-            android:title="Cart"
+            android:title="produtos adicionais"
             android:id="@+id/navCart"
             android:icon="@drawable/cart"
             />
 
         <item
-            android:title="Favourite"
+            android:title="Favoritos"
             android:id="@+id/navFavourite"
             android:icon="@drawable/round_favorite_border_24"
             />
@@ -26,13 +26,13 @@
     <group android:id="@+id/group2">
 
         <item
-            android:title="Ongoing Orders"
+            android:title="Botão de emergencia"
             android:id="@+id/navOrders"
             android:icon="@drawable/ongoing"
             />
 
         <item
-            android:title="History"
+            android:title="lista de uso"
             android:id="@+id/navHistory"
             android:icon="@drawable/baseline_history_24"
             />
@@ -48,13 +48,13 @@
             />
 
         <item
-            android:title="Terms and Conditions"
+            android:title="Termos e condições"
             android:id="@+id/navTerms"
             android:icon="@drawable/terms"
             />
 
         <item
-            android:title="Contact us"
+            android:title="contate-nos"
             android:id="@+id/navContact"
             android:icon="@drawable/contact"
             />
@@ -63,7 +63,7 @@
     <group android:id="@+id/group4">
 
         <item
-            android:title="Share"
+            android:title="Deslogar"
             android:id="@+id/navShare"
             android:icon="@drawable/share"
             />
