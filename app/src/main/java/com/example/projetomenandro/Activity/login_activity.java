@@ -88,7 +88,7 @@ public void validarcampos(View view){
     }
 
     private void abrirMenu() {
-        Intent i = new Intent(login_activity.this,Menu.class);
+        Intent i = new Intent(login_activity.this,MainActivityMenu.class);
         startActivity(i);
 
     }
