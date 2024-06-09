@@ -17,5 +17,15 @@
             android:background="@android:color/transparent"
             android:padding="5dp"/>
     </androidx.appcompat.widget.Toolbar>
+    <Button
+        android:id="@+id/joguinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jogo da memoria!"
+        android:backgroundTint="@color/blue">
+        >
+
+    </Button>
+
     
 </LinearLayout>
