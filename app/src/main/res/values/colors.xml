@@ -8,4 +8,9 @@
     <color name="blue">#2196F3</color>
     <color name="teal_200">#80CBC4</color>
     <color name="teal_700">#00796B</color>
+    <color name="background_color">#FFF176</color> <!-- Yellow -->
+    <color name="title_color">#F44336</color> <!-- Red -->
+    <color name="text_color">#3F51B5</color> <!-- Blue -->
+    <color name="button_color">#4CAF50</color> <!-- Green -->
+    <color name="button_text_color">#FFFFFF</color> <!-- White -->
 </resources>

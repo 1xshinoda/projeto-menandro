@@ -51,7 +51,15 @@ public class MainActivityMenu extends AppCompatActivity {
             }
         });
 
-
+        Button buttonJoguinho2 = findViewById(R.id.joguinho2);
+        buttonJoguinho2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent para a nova atividade desejada
+                Intent intent = new Intent(MainActivityMenu.this, jogo.class);
+                startActivity(intent);
+            }
+        });
 
 
         View headerView = navigationView.getHeaderView(0);

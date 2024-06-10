@@ -23,9 +23,20 @@
         android:layout_height="wrap_content"
         android:text="Jogo da memoria!"
         android:backgroundTint="@color/blue">
-        >
+
+
+    </Button>
+    <Button
+
+        android:id="@+id/joguinho2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="encontre os animais!"
+        android:backgroundTint="@color/blue">
+
 
     </Button>
 
-    
+
+
 </LinearLayout>

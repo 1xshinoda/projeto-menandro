@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".Activity.jogo">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encontre o Animal"
+        android:textSize="32sp"
+        android:textColor="@color/title_color"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tv_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toque no cachorro"
+        android:textSize="24sp"
+        android:textColor="@color/text_color"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_instruction"
+        android:layout_marginTop="40dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_dog"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/image_border"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dog" />
+
+        <ImageView
+            android:id="@+id/iv_cat"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/image_border"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cat" />
+
+        <ImageView
+            android:id="@+id/iv_bird"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/image_border"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bird" />
+
+        <ImageView
+            android:id="@+id/iv_fish"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/image_border"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fish" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Reiniciar"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/button_text_color"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:visibility="gone" />
+</RelativeLayout>

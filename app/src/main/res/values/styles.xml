@@ -7,8 +7,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
 
+    </style>
+    <style name="Base.Theme.EncontreOAnimal" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="Theme.EncontreOAnimal" parent="Base.Theme.EncontreOAnimal" />
 
     <style name="Button">
         <item name="android:layout_width">match_parent</item>
