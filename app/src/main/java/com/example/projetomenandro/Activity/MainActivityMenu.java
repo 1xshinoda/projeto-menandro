@@ -61,6 +61,16 @@ public class MainActivityMenu extends AppCompatActivity {
             }
         });
 
+        Button buttonJoguinho3 = findViewById(R.id.joguinho3);
+        buttonJoguinho3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent para a nova atividade desejada
+                Intent intent = new Intent(MainActivityMenu.this, quests.class);
+                startActivity(intent);
+            }
+        });
+
 
         View headerView = navigationView.getHeaderView(0);
         ImageView userImage = headerView.findViewById(R.id.userImage);
