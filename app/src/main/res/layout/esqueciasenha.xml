@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cda0d835266a6e84e5a05e4b88c25de1"
+    android:background="@drawable/gradientroxo"
 
     tools:context=".Activity.">
 
@@ -88,7 +88,7 @@
     />
 
 <Button
-    style="@style/Button"
+    style="@style/Button1"
     android:id="@+id/BtConfirmNovSenha"
     android:text="Troca!"
     app:layout_constraintTop_toBottomOf="@id/EditTextConfirmNovSenha"

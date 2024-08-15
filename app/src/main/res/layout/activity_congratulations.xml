@@ -3,15 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/backg_vencer"
+    android:background="@drawable/gradientroxo"
     android:layout_height="match_parent"
     tools:context="Activity.Congratulations">
 
     <ImageButton
         android:id="@+id/voltar"
-        android:layout_width="84dp"
-        android:layout_height="89dp"
-        android:background="@drawable/home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/homewhite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.048"
@@ -19,27 +21,47 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.061" />
 
+    <ImageView
+        android:id="@+id/coroa"
+        android:layout_width="606dp"
+        android:layout_height="423dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/coroa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        tools:ignore=",MissingConstraints" />
+
     <Button
         android:id="@+id/button"
-        android:layout_width="180dp"
-        android:layout_height="90dp"
-        android:layout_marginBottom="4dp"
+        style="@style/Button1"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
         android:text="Tentar Novamente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.075" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="180dp"
-        android:layout_height="90dp"
+        style="@style/Button1"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+
         android:text="Próxima Fase"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.105" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

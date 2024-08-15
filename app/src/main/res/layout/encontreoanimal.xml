@@ -3,8 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradientroxo"
     tools:context=".Activity.jogo">
+
+    <ImageButton
+        android:id="@+id/voltarmenu1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/homewhite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick=""
+        app:layout_constraintBottom_toTopOf="@+id/iv_dog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        tools:ignore="NotSibling" />
 
     <TextView
         android:id="@+id/tv_title"
@@ -12,9 +29,9 @@
         android:layout_height="wrap_content"
         android:text="Encontre o Animal"
         android:textSize="32sp"
-        android:textColor="@color/title_color"
+        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="80dp"
         android:textStyle="bold"
         android:fontFamily="sans-serif-medium" />
 
@@ -24,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="Toque no cachorro"
         android:textSize="24sp"
-        android:textColor="@color/text_color"
+        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/tv_title"
         android:layout_marginTop="20dp"

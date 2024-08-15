@@ -1,5 +1,6 @@
 package com.example.projetomenandro.Activity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,8 +12,9 @@ import com.example.projetomenandro.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button button1,button2,button3;
+    private Button button1,button2,button3; //button4;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         button1 = findViewById(R.id.fase1);
         button2 = findViewById(R.id.fase2);
         button3 = findViewById(R.id.fase3);
+       // button4 = findViewById(R.id.voltarmenu1);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //button4.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+            //public void onClick(View v) {
+              //  Intent intent = new Intent(MainActivity.this, MainActivityMenu.class);
+                //startActivity(intent);
+            //}
+        //});
 
 
     }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C32323"
+    android:background="@drawable/gradientroxo"
     tools:context="Activity.fase2">
 
     <TextView

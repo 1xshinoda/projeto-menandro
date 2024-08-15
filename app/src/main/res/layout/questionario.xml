@@ -3,14 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.quests">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.quests"
+    android:background="@drawable/gradientroxo">
+
+    <ImageButton
+        android:id="@+id/voltarmenu1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/homewhite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick=""
+        app:layout_constraintBottom_toTopOf="@+id/answer_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        tools:ignore="NotSibling" />
 
     <ImageView
         android:id="@+id/question_image"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:contentDescription="@string/question_image_desc"
         android:src="@drawable/ic_launcher_foreground" />
 
@@ -38,7 +56,7 @@
             android:id="@+id/answer_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_button"
+            style="@style/Button1"
             android:text="Resposta 1"
             android:textSize="18sp"
             android:layout_marginBottom="10dp"/>

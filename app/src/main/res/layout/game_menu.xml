@@ -4,51 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backg"
+    android:background="@drawable/gradientroxo"
     tools:context="Activity.MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="90dp"
+    <ImageButton
+        android:id="@+id/voltarmenu1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/homewhite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick=""
+        app:layout_constraintBottom_toTopOf="@+id/fase3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <ImageView
+        android:layout_width="421dp"
+        android:layout_height="287dp"
+        android:src="@drawable/jogodamemoria"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/fase1"
+        style="@style/Button1"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:onClick="passar_fase1"
-        android:backgroundTint="#71AF48"
         android:text="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.781" />
 
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/fase2"
-        android:layout_width="wrap_content"
-        android:layout_height="90dp"
-        android:backgroundTint="#71AF48"
+        style="@style/Button1"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:onClick="passar_fase2"
         android:text="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.624" />
+        app:layout_constraintVertical_bias="0.639" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/fase3"
-        android:layout_width="wrap_content"
-        android:layout_height="90dp"
-        android:backgroundTint="#71AF48"
+        style="@style/Button1"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
         android:onClick="passar_fase3"
         android:text="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.485" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
