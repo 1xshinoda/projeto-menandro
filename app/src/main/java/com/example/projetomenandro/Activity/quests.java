@@ -1,8 +1,10 @@
 package com.example.projetomenandro.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -22,6 +24,7 @@ public class quests extends AppCompatActivity {
     private List<Question> questions;
     private int currentQuestionIndex;
     private int score;
+    private ImageButton imageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +34,24 @@ public class quests extends AppCompatActivity {
         questionImage = findViewById(R.id.question_image);
         questionText = findViewById(R.id.question_text);
         answersLayout = findViewById(R.id.answers_layout);
+        imageButton = findViewById(R.id.voltarmenu1);
 
         questions = getQuestions();
         currentQuestionIndex = 0;
         score = 0;
 
         showQuestion(currentQuestionIndex);
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(quests.this, MainActivityMenu.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
 
     private List<Question> getQuestions() {
         List<Question> questions = new ArrayList<>();
@@ -51,6 +65,8 @@ public class quests extends AppCompatActivity {
 
         return questions;
     }
+
+
 
     private void showQuestion(int questionIndex) {
         Question question = questions.get(questionIndex);
@@ -98,4 +114,6 @@ public class quests extends AppCompatActivity {
         questionImage.setVisibility(View.GONE);
         answersLayout.removeAllViews();
     }
+
+
 }

@@ -1,9 +1,11 @@
 package com.example.projetomenandro.Activity;
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,11 +23,14 @@ public class jogo extends AppCompatActivity {
     private TextView tvInstruction;
     private TextView tvTitle;
     private Button btnRestart;
+    private ImageButton imageButton;
     private String[] animals = {"cachorro", "gato", "peixe", "pássaro"};
     private int currentAnimalIndex = 0;
     private boolean gameActive = true;
     private int wrongAttempts = 0;
     private final int MAX_WRONG_ATTEMPTS = 3; // Limite de tentativas erradas
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +44,7 @@ public class jogo extends AppCompatActivity {
         ImageView ivBird = findViewById(R.id.iv_bird);
         ImageView ivFish = findViewById(R.id.iv_fish);
         btnRestart = findViewById(R.id.btn_restart);
+        imageButton = findViewById(R.id.voltarmenu1);
 
         shuffleAnimals(); // Embaralha a lista de animais
         animateTitle();
@@ -66,6 +72,14 @@ public class jogo extends AppCompatActivity {
                 restartGame();
             }
         });
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(jogo.this, MainActivityMenu.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void shuffleAnimals() {
@@ -73,6 +87,8 @@ public class jogo extends AppCompatActivity {
         Collections.shuffle(animalList);
         animalList.toArray(animals);
     }
+
+
 
     // Método para escolher um animal aleatório
     private void chooseRandomAnimal() {

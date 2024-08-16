@@ -14,7 +14,6 @@
         android:background="@drawable/homewhite"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:onClick=""
         app:layout_constraintBottom_toTopOf="@+id/iv_dog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.048"
