@@ -24,6 +24,7 @@ public class MainActivityMenu extends AppCompatActivity {
     ImageButton buttonDrawerToggle;
     NavigationView navigationView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,15 +90,14 @@ public class MainActivityMenu extends AppCompatActivity {
                 int itemId = item.getItemId();
 
                 if (itemId == R.id.navMenu) {
-                    Toast.makeText(MainActivityMenu.this, "Menu Clicked", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivityMenu.this, "Perfil Clicked", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navCart) {
-                    Toast.makeText(MainActivityMenu.this, "Cart Clicked", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivityMenu.this, "Sobre Clicked", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navFavourite) {
                     Toast.makeText(MainActivityMenu.this, "Favourite Clicked", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navOrders) {
                     Toast.makeText(MainActivityMenu.this, "Orders Clicked", Toast.LENGTH_SHORT).show();
-                } else if (itemId == R.id.navHistory) {
-                    Toast.makeText(MainActivityMenu.this, "History Clicked", Toast.LENGTH_SHORT).show();
+
                 } else if (itemId == R.id.navFeedBack) {
                     Toast.makeText(MainActivityMenu.this, "FeedBack Clicked", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navTerms) {

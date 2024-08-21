@@ -4,13 +4,13 @@
     <group android:id="@+id/group1">
 
         <item
-            android:title="perfil"
+            android:title="Perfil"
             android:id="@+id/navMenu"
             android:icon="@drawable/menu"
             />
 
         <item
-            android:title="produtos adicionais"
+            android:title="Sobre o App"
             android:id="@+id/navCart"
             android:icon="@drawable/cart"
             />
@@ -31,11 +31,9 @@
             android:icon="@drawable/ongoing"
             />
 
-        <item
-            android:title="lista de uso"
-            android:id="@+id/navHistory"
-            android:icon="@drawable/baseline_history_24"
-            />
+
+
+
 
     </group>
 
@@ -54,7 +52,7 @@
             />
 
         <item
-            android:title="contate-nos"
+            android:title="Contate-nos"
             android:id="@+id/navContact"
             android:icon="@drawable/contact"
             />

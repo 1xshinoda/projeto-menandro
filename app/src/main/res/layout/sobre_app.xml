@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientroxo">
+
+    <View
+        android:id="@+id/containerlogin"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/container_edit_text_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texttittle1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Sobre o Aplicativo:"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/texttittle"
+        app:layout_constraintEnd_toEndOf="@id/containerlogin"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@id/containerlogin"
+        app:layout_constraintTop_toTopOf="@id/containerlogin"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <TextView
+        android:id="@+id/texttittle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="100dp"
+        android:text="Olá somos da empresa KingTea, oferecemos auxílio no desenvolvimento intelectual de crianças com transtorno do espectro autista, por meio de jogos de forma divertida e simplificada"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/containerlogin"
+        app:layout_constraintTop_toTopOf="@+id/containerlogin" />"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
