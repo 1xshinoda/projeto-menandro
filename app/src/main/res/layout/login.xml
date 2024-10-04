@@ -63,6 +63,7 @@
         android:background="@drawable/container_edit_text_all"
         android:hint="Email:"
         android:inputType="text"
+        android:drawableLeft="@drawable/person_header"
         android:maxLines="1"
         android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/containerlogin"
@@ -82,6 +83,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="237dp"
         android:background="@drawable/container_edit_text_all"
+        android:drawableLeft="@drawable/lock"
         android:hint="Senha:"
         android:inputType="numberPassword"
         android:maxLines="1"
@@ -108,9 +110,37 @@
         app:layout_constraintBottom_toBottomOf="@+id/containerlogin"
         app:layout_constraintEnd_toEndOf="@id/containerlogin"
 
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="@id/containerlogin"
-        app:layout_constraintTop_toBottomOf="@id/EditLoginSenha" />
+        app:layout_constraintTop_toBottomOf="@id/EditLoginSenha"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="@string/EsqSenha"
+        android:textColor="#0800FF"
+        app:layout_constraintBottom_toTopOf="@+id/BotaoLogin"
+        app:layout_constraintEnd_toEndOf="@+id/containerlogin"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toEndOf="@+id/editEsqueceuSenha"
+        app:layout_constraintTop_toBottomOf="@+id/EditLoginSenha"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="@string/Cadastro"
+        android:textColor="#0800FF"
+        app:layout_constraintBottom_toTopOf="@+id/BotaoLogin"
+        app:layout_constraintEnd_toEndOf="@+id/containerlogin"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toEndOf="@+id/editCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/EditLoginSenha"
+        app:layout_constraintVertical_bias="0.985" />
 
     <TextView
         android:id="@+id/editCadastro"
@@ -128,8 +158,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/containerlogin"
         app:layout_constraintEnd_toEndOf="@+id/containerlogin"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/containerlogin"
-        app:layout_constraintTop_toTopOf="@+id/containerlogin" />
+        app:layout_constraintTop_toTopOf="@+id/containerlogin"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/BotaoLogin"
