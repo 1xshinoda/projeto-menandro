@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradientroxo">
+    android:background="@drawable/gradientbackground">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
@@ -21,8 +21,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="231dp"
-        android:src="@drawable/logogames" />
+        android:layout_height="231dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/joguinho"

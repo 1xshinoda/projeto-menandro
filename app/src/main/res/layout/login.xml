@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradientroxo"
+    android:background="@drawable/gradientbackground"
 
     tools:context=".Activity.login_activity">
 
@@ -25,100 +25,130 @@
         android:id="@+id/texttittle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toTopOf="@id/containerlogin"
-        app:layout_constraintStart_toStartOf="@id/containerlogin"
+        android:layout_marginBottom="396dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/containerlogin"
         app:layout_constraintEnd_toEndOf="@id/containerlogin"
 
-        />
+        app:layout_constraintStart_toStartOf="@id/containerlogin"
+        app:layout_constraintTop_toTopOf="@id/containerlogin" />
+
     <TextView
         android:id="@+id/textdesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="insira suas informações"
-        android:textSize="14sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/texttittle"
-        app:layout_constraintStart_toStartOf="@id/containerlogin"
+        android:layout_marginBottom="357dp"
+        android:text="insira suas informações"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/containerlogin"
         app:layout_constraintEnd_toEndOf="@id/containerlogin"
 
-        />
+        app:layout_constraintStart_toStartOf="@id/containerlogin"
+        app:layout_constraintTop_toBottomOf="@id/texttittle" />
+
+
     <EditText
         android:id="@+id/EditEmailLogin"
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/container_edit_text_all"
         android:hint="Email:"
-        android:background="@drawable/container_edit_text_login"
-        android:padding="8dp"
         android:inputType="text"
         android:maxLines="1"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="40dp"
-        app:layout_constraintTop_toBottomOf="@id/textdesc"
-        app:layout_constraintStart_toStartOf="@+id/containerlogin"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/containerlogin"
         app:layout_constraintEnd_toEndOf="@+id/containerlogin"
+        app:layout_constraintStart_toStartOf="@+id/containerlogin"
 
 
-        />
+        app:layout_constraintTop_toBottomOf="@id/textdesc"
+        app:layout_constraintVertical_bias="0.013" />
+
     <EditText
         android:id="@+id/EditLoginSenha"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:padding="8dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="237dp"
+        android:background="@drawable/container_edit_text_all"
         android:hint="Senha:"
-        android:background="@drawable/container_edit_text_login"
         android:inputType="numberPassword"
         android:maxLines="1"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="40dp"
-        app:layout_constraintTop_toBottomOf="@id/EditEmailLogin"
-        app:layout_constraintStart_toStartOf="@+id/containerlogin"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/containerlogin"
         app:layout_constraintEnd_toEndOf="@+id/containerlogin"
-        />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/containerlogin"
+        app:layout_constraintTop_toBottomOf="@id/EditEmailLogin"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/editEsqueceuSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Esqueceu sua senha?"
-        android:textSize="14sp"
-        android:textColor="@color/NEON"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"
         android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="194dp"
+        android:text="Esqueceu sua senha?"
+        android:textColor="#E3E1E2"
+        android:textSize="14sp"
 
-        app:layout_constraintTop_toBottomOf="@id/EditLoginSenha"
-        app:layout_constraintStart_toStartOf="@id/containerlogin"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/containerlogin"
         app:layout_constraintEnd_toEndOf="@id/containerlogin"
 
-        />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/containerlogin"
+        app:layout_constraintTop_toBottomOf="@id/EditLoginSenha" />
+
+    <TextView
+        android:id="@+id/editCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="273dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="157dp"
+
+        android:text="Ainda não fez cadastro?"
+        android:textColor="#E3E1E2"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/containerlogin"
+        app:layout_constraintEnd_toEndOf="@+id/containerlogin"
+        app:layout_constraintStart_toStartOf="@+id/containerlogin"
+        app:layout_constraintTop_toTopOf="@+id/containerlogin" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/BotaoLogin"
         style="@style/Button1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="44dp"
+
         android:onClick="validarcampos"
-        android:padding="15dp"
+        android:padding="10dp"
         android:text="Entrar!"
+        app:layout_constraintBottom_toBottomOf="@+id/containerlogin"
+        app:layout_constraintEnd_toEndOf="@+id/containerlogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/containerlogin"
+        app:layout_constraintTop_toBottomOf="@+id/EditLoginSenha"
+        app:layout_constraintVertical_bias="0.917" />
 
-        app:layout_constraintEnd_toEndOf="@id/containerlogin"
-        app:layout_constraintStart_toStartOf="@id/containerlogin"
-        app:layout_constraintTop_toBottomOf="@id/editEsqueceuSenha" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/BTcadastrar"
-        style="@style/Button1"
-        android:onClick="cadastrar"
-
-        android:text="cadastre-se!"
-
-        app:layout_constraintEnd_toEndOf="@id/containerlogin"
-        app:layout_constraintStart_toStartOf="@id/containerlogin"
-        app:layout_constraintTop_toBottomOf="@id/BotaoLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
