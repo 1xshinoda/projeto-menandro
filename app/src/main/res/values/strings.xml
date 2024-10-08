@@ -10,6 +10,8 @@
     <string name="previous">Previous</string>
     <string name="EsqSenha">Redefinir Senha</string>
     <string name="Cadastro">Cadastra-se</string>
+    <string name="uso">uso</string>
+    <string name="Fazerlogin">uso</string>
     <string name="question_image_desc">Descrição da imagem de questão</string>
     <string name="image_circulo">circulo.png</string>
     <string name="image_quadrado">quadrado.png</string>
