@@ -32,6 +32,11 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    dependenciesInfo {
+        includeInApk = true
+        includeInBundle = false
+    }
+    buildToolsVersion = "34.0.0"
 }
 
 dependencies {

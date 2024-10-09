@@ -19,7 +19,9 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" />
         <activity android:name=".Activity.cadastro_activity" />
-        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.MainActivity"
+            android:configChanges="orientation|screenSize"
+            />
         <activity android:name=".Activity.fase1" />
         <activity android:name=".Activity.fase2" />
         <activity android:name=".Activity.fase3" />
@@ -34,6 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
