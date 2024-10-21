@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Activity.quests"
-    android:background="@drawable/gradientbackground">
+    android:background="@drawable/background">
 
     <ImageButton
         android:id="@+id/voltarmenu1"

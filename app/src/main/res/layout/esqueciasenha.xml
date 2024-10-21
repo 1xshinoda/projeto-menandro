@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradientbackground"
+    android:background="@drawable/background"
 
     tools:context=".Activity.">
 
@@ -56,7 +56,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="Nova Senha:"
-    android:background="@drawable/container_edit_text_login"
+    android:background="@drawable/container_edit_text_all"
     android:padding="15dp"
     android:inputType="text"
     android:maxLines="1"
@@ -74,7 +74,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="Confirmar Senha:"
-    android:background="@drawable/container_edit_text_login"
+    android:background="@drawable/container_edit_text_all"
     android:padding="15dp"
     android:inputType="text"
     android:maxLines="1"
