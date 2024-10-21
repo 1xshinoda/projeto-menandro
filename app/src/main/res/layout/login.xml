@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/NEON"
+    android:background="@drawable/background"
 
     tools:context=".Activity.login_activity">
 
@@ -109,7 +109,7 @@
         android:layout_marginBottom="16dp"
 
         android:text="Esqueceu sua senha?"
-        android:textColor="#E3E1E2"
+        android:textColor="#fff"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editCadastro"
@@ -156,7 +156,7 @@
         android:layout_marginEnd="164dp"
         android:layout_marginBottom="158dp"
         android:text="Ainda não fez cadastro?"
-        android:textColor="#E3E1E2"
+        android:textColor="#fff"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/containerlogin"
