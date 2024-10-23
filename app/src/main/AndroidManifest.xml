@@ -28,6 +28,7 @@
         <activity android:name=".Activity.Congratulations" />
         <activity android:name=".Activity.jogo" />
         <activity android:name=".Activity.quests" />
+        <activity android:name=".Activity.AulasActivity" />
         <activity
             android:name=".Activity.login_activity"
             android:exported="true">

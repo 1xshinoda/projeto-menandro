@@ -30,33 +30,31 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="90dp"
         android:layout_marginTop="80dp"
-        android:text="Jogo da memoria!">
-
-
-    </androidx.appcompat.widget.AppCompatButton>
+        android:text="Jogo da memoria!"/>
 
     <Button
-
         android:id="@+id/joguinho2"
         style="@style/Button1"
         android:layout_width="214dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="90dp"
-        android:text="encontre os animais!">
-
-
-    </Button>
+        android:text="encontre os animais!"/>
 
     <Button
-
         android:id="@+id/joguinho3"
         style="@style/Button1"
         android:layout_width="214dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="90dp"
-        android:text="Questionario">
+        android:text="Questionario"/>
 
-
-    </Button>
+    <ImageButton
+        android:id="@+id/buttonAulas"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Botão para aulas"
+        android:src="@drawable/imagem_aulas" />
 
 </LinearLayout>

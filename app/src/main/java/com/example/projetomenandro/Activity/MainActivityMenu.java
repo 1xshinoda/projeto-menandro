@@ -84,6 +84,15 @@ public class MainActivityMenu extends AppCompatActivity {
             }
         });
 
+        ImageButton buttonAulas = findViewById(R.id.buttonAulas);
+        buttonAulas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivityMenu.this, AulasActivity.class);
+                startActivity(intent);
+            }
+        });
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
